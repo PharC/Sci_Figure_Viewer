@@ -1,4 +1,4 @@
-# 🔬 科学期刊图片助手 (Journal Figure Assistant)
+# 🔬 科学期刊图片助手 (Sci-Figure-Viewer)
 
 一款专为科研人员设计的 Chrome 浏览器插件，支持在阅读文献时快速查看大图。
 
