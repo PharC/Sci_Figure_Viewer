@@ -110,6 +110,114 @@
     border-bottom: 1px solid #e1e5e9;
 }
 
+/* 滚动条控制 */
+#scroll-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* 让点击穿透到图片 */
+    z-index: 10;
+}
+
+#horizontal-scroll {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    pointer-events: auto; /* 恢复滚动条的点击 */
+}
+
+#vertical-scroll {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 60%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    pointer-events: auto; /* 恢复滚动条的点击 */
+}
+
+#h-scroll {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #e2e8f0;
+    border-radius: 6px;
+}
+
+#h-scroll::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 12px;
+    border-radius: 6px;
+    background: #667eea;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.2s ease;
+}
+
+#h-scroll::-webkit-slider-thumb:hover {
+    background: #5a67d8;
+}
+
+#h-scroll::-moz-range-thumb {
+    width: 20px;
+    height: 12px;
+    border-radius: 6px;
+    background: #667eea;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#v-scroll {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: slider-vertical;
+    background: #e2e8f0;
+    border-radius: 6px;
+    writing-mode: bt-lr; /* IE */
+    writing-mode: vertical-lr; /* Standard */
+}
+
+#v-scroll::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 20px;
+    border-radius: 6px;
+    background: #667eea;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.2s ease;
+}
+
+#v-scroll::-webkit-slider-thumb:hover {
+    background: #5a67d8;
+}
+
 #preview-img {
     max-width: 100%;
     max-height: 100%;
