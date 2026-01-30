@@ -1,5 +1,5 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "科学期刊图片助手",
   "description": "在Cell、Nature、Science、Wiley等期刊网站上点击图片链接时在侧边栏显示高清图片",
   "version": "1.0",
@@ -27,7 +27,7 @@
       "css": ["style.css"]
     }
   ],
-  "action": {
+  "browser_action": {
     "default_popup": "popup.html",
     "default_title": "科学期刊图片助手"
   }
